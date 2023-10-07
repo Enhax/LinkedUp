@@ -107,11 +107,14 @@ a{
     flex-wrap:wrap;
     justify-content: space-between;
 }
+
 /* ---------- left-sidebar ---------- */
 
-.left-sidebar{
+.left-sidebar{ 
+    position:sticky;
+    top:80px;
+    align-self: flex-start;
     flex-basis:25%;
-    align-items: flex-start;
 }
 .sidebar-profile-box{
     background: #fff;
@@ -207,11 +210,12 @@ a{
 }
 
 /* ---------- right-sidebar ---------- */
+
 .right-sidebar{
     position:sticky;
     top:80px;
+    align-self: flex-start;
     flex-basis:25%;
-    align-items: flex-start;
 }
 .sidebar-news{
     background: #fff;
@@ -277,13 +281,12 @@ a{
     font-weight: 500;
 }
 .sidebar-useful-links{
-    background: #fff;
     padding:15px 25px;
     text-align: center;
 }
 .sidebar-useful-links a{
     display: inline-block;
-    font-size:13px;
+    font-size:14px;
     margin:4px 12px;
 }
 .copyright-msg{
