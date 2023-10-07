@@ -112,7 +112,7 @@ a{
 
 .left-sidebar{ 
     position:sticky;
-    top:80px;
+    top:78px;
     align-self: flex-start;
     flex-basis:25%;
 }
@@ -213,7 +213,7 @@ a{
 
 .right-sidebar{
     position:sticky;
-    top:80px;
+    top:78px;
     align-self: flex-start;
     flex-basis:25%;
 }
@@ -305,7 +305,7 @@ a{
 /* ---------- main-content ---------- */
 .main-content{
     flex-basis:47%;
-    align-items: flex-start;
+    align-self: flex-start;
 }
 .create-post{
     background: #fff;
