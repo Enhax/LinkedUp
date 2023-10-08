@@ -465,7 +465,12 @@ a{
     right:5%;
     width:90%;
     max-width:380px;
-    max-height:500px;
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.profile-menu-wrap.open-menu{
+    max-height:450px;
 }
 .profile-menu{
     background: #222;
