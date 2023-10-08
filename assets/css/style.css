@@ -178,6 +178,7 @@ a{
     padding:5px 25px;
     margin:12px 0;
 }
+
 .sidebar-activity h3{
     color:#777;
     font-size:16px;
@@ -305,7 +306,6 @@ a{
 /* ---------- main-content ---------- */
 .main-content{
     flex-basis:47%;
-    align-self: flex-start;
 }
 .create-post{
     background: #fff;
@@ -498,12 +498,11 @@ a{
 }
 #dark-btn{
     display:flex;
-    position:relative;
-    margin-left:72px;
-  /*  top:45px;
-    right:30px; */
+    position:absolute;
+    top:45px;
+    right:30px; 
     background-color: #666;
-    width:44px;
+    width:45px;
     border-radius: 15px;
     padding: 2px 3px;
     cursor:pointer;
@@ -751,15 +750,113 @@ a{
 .profile-footer .copyright-msg{
     justify-content: flex-start;
 }
+#showMoreLink{
+    display:none;
+}
 
-/* ---------- MEDIA_QUERY ---------- */
+/* ---------- MEDIA_QUERY_FOR_SMALL_SCREENS ---------- */
 
 @media only screen and (max-width:768px){
 
     .search-box{
+        background:transparent;
+        width:auto;
+        padding:0;
+    }
+    .search-box input{
         width:0;
+        padding:0;
     }
     .navbar-center ul li a span{
         display:none;
     }
+    .navbar-center ul li a{
+        margin:5px;
+        padding:0;
+    }
+    .navbar-center ul li a::after{
+        left:unset;
+        bottom:-20px;
+    }
+    .nav-profile-img{
+        width:35px;
+    }
+    .container{
+        width:100%;
+        padding:15px 2%;
+        justify-content: center;
+    }
+    .left-sidebar, .right-sidebar{
+        flex-basis:100%;
+        position:relative;
+        top:unset;
+    }
+    .main-content{
+        flex-basis: 100%;
+    }
+    .post-activity-link span{
+        display:none;
+    }
+    .post-activity-link img{
+        margin-right:0;
+    }
+    .create-post-links li{
+        font-size:13px;
+    }
+    .create-post-links li img{
+        width:15px;
+    }
+
+    /* ---------- MEDIA_QUERY_PROFILE_PAGE ---------- */
+
+    .profile-main, .profile-sidebar{
+        flex-basis:100%;
+    }
+    .profile-pic{
+        width:90px;
+        margin-top:-50px;
+        padding:2px;
+    }
+    .sidebar-profile-info img{
+        width:90px;
+        margin-top:-50px;
+        padding:2px;
+    }
+    .online::after{
+        width:6px;
+        height:6px;
+        border:1px solid #fff;
+    }
+    .profile-container{
+        font-size: 14px;
+    }
+    .profile-description{
+        font-size: 14px;
+    }
+    .profile-desc-row{
+        font-size: 14px;
+    }
+    .profile-desc-row img{
+        width:30px;
+    }
+    .skills-btn{
+        font-size: 14px;
+        padding:5px 5px;
+        margin:5px;
+    }
+    .profile-container-inner{
+        padding:1px 25px;
+    }
+    #showMoreLink{
+        display:block;
+        width:fit-content;
+        margin:10px auto;
+        font-size: 14px;
+        cursor:pointer;
+    }
+    .sidebar-activity{
+        display:none;
+    }
+    .sidebar-activity.show-activity{
+        display:block;
 }
