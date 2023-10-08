@@ -71,7 +71,7 @@ a{
     background-color: #045be6;
     position:absolute;
     left:5px;
-    bottom:-15px;
+    bottom:-20px;
     transition: width 0.4s;
 }
 .navbar-center ul li a:hover::after,
@@ -499,7 +499,7 @@ a{
 #dark-btn{
     display:flex;
     position:absolute;
-    top:45px;
+    top:44px;
     right:30px; 
     background-color: #666;
     width:45px;
