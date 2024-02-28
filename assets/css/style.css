@@ -756,7 +756,7 @@ a{
 
 /* ---------- MEDIA_QUERY_FOR_SMALL_SCREENS ---------- */
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1680px){
 
     .search-box{
         background:transparent;
@@ -859,4 +859,5 @@ a{
     }
     .sidebar-activity.show-activity{
         display:block;
+}
 }
